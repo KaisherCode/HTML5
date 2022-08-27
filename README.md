@@ -1,0 +1,1 @@
+Es un proyecto fronted se utilizó HTML5 y css.
