@@ -1,1 +1,1 @@
-Es un proyecto fronted se utilizó HTML5 y css.
+Es un proyecto de maquetación utilizando HTML5 y CSS.
