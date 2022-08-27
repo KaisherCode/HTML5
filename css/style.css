@@ -1,0 +1,292 @@
+
+/* Config fuente de Google */
+@import url('fontawesome/css/all.css');
+:root{
+    --color1: #A62420;
+    --color2: #F22259;
+    --color3: #1BA6A6;
+    --color4: #F2B705;
+    --color5: #D93D04;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --grsi-claro: #ddd;
+    --gris-oscuro: #444;
+    --sombra-basica: 0px 0px 15px 5px rgb(0 0 0/30%);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--grsi-claro);
+    font-family: Verdana,Tahoma, sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: var(--gris-oscuro);
+    line-height: 22px;
+}
+
+p{
+    margin-top:0;
+    margin-bottom:0.9em;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+    line-height: 0.9em;
+}
+
+h2{
+    font-size:20px;
+    font-weight:200;
+    text-transform:initial;
+    letter-spacing: -2px;
+    margin-bottom: 20px ;
+}
+
+h3{
+    font-size:20px;
+    letter-spacing: -1px;
+    font-weight:700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* ===============Hiperviculos============  */
+a {
+    color: var(--color1);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color1);
+    text-decoration: underline;
+}
+/* ========top-nav============ */
+#top-nav{
+    background-color: var(--color-negro);
+    color: var(--grsi-claro);
+}
+#top-nav .row{
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.menu-top li a{
+    padding: 5px 10px;
+    color: var(--grsi-claro);
+    font-size: 0.8em ;
+}
+
+.menu-top li a:hover{
+    background-color: var(--gris-oscuro);
+    color:var(--color-blanco)
+}
+
+/* =============header========== */ 
+#main-header{
+    background-color: var(--color3);
+    color: var(--color-blanco);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#main-header .row{
+    justify-content:space-between;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 150px;
+}
+
+img{
+    display: block;
+}
+
+figure{
+    margin: 0;
+}
+
+.img-fluid{
+    width:100%;
+    height: auto;
+}
+
+.alineacion-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* =========continaer============ */
+.container{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+/* =========row============ */
+.row{
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-wrap: wrap;
+}
+/* =========col============ */
+.col {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.col-66{
+    flex-basis: 66.66;
+    max-width: 66.66%;
+}
+
+/* =========menu============ */
+.menu{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu li a{
+    display: block;
+    text-decoration:none ;
+}
+
+.menu a:hover{
+    text-decoration:none;
+}
+.menu-main li a{
+    padding: 20px 30px;
+    color: var(--color-blanco);
+    text-transform: capitalize;
+    border-bottom: solid 3px transparent;
+}
+.menu-main li a:hover{
+    border-bottom: solid 3px var(--color-negro);
+}
+
+/* ==================main content============ */
+#main-content{
+    min-height: 600px;
+}
+
+#main-banner{
+    position: relative;
+}
+
+#main-banner-leyenda{
+    position: absolute;
+    background-color: var(--color-blanco);
+    width: 40%;
+    padding:30px;
+    box-sizing: border-box;
+    bottom: -10px;
+    left: 30%;
+    box-shadow: var(--sombra-basica);
+}
+
+/* ============section-historia============= */
+#historia{
+    background-color:burlywood;
+}
+
+.padded{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* =============conferencia==================*/
+#conferencia{
+    background-color:var(--color-negro);
+    color:var(--color-blanco);
+}
+
+.imagen-leyenda{
+    position:relative;
+}
+
+.imagen-leyenda-contenido{
+    position:absolute;
+    background-color: rgba(169, 199, 98, 0.7);
+    top:0;
+    padding:30px;
+    height: 100%;
+    width: calc(100%-30px);
+    box-sizing: border-box;
+    opacity: 0;
+    transition:all .05 ease-in-out;
+}
+
+.imagen-leyenda-contenido:hover{
+    opacity: 1;
+}
+
+/* ===============mensaje==================*/
+#mensaje{
+    background-color:azure;
+    color: var(--gris-oscuro);
+}
+
+
+
+/* ============main-footer================== */
+#main-footer{
+    background-color: var(--color-blanco);
+    color:darkblue;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+#main-footer .container .row .col li{
+    list-style: none;
+}
+
+#main-footer .container .row .col li a{
+    color: var(--gris-oscuro)
+}
+
+.logo-footer .logo-in{
+    width: 100%;
+    text-align: center;
+}
+
+.logo-in a{
+    text-align: center;
+}
+.img-logo{
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#icono-redes-footer{
+    text-align: center;
+}
+
+#copyright{
+    background-color: var(--gris-oscuro);
+    color: var(--grsi-claro);
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+#ir-arriba{
+    background-color: brown;
+    color: var(--color-blanco);
+    border-radius: 50%;
+    padding: 15px 17px;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+
+}
+
+
+
+
